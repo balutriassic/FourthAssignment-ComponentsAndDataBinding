@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="col-md-12">
+        <h1>Game Control App</h1>
+    </div>
+    <div class="col-md-12">
+        <app-game-control (intervelFired)="onIntevelFired($event)"></app-game-control>
+
+    </div>
+    <br/>
+    <div class="col-md-12" style="margin-top: 10px">
+        <app-odd *ngFor="let oddNumber of oddNumbers " [number]="oddNumber"></app-odd>
+        <app-even *ngFor="let evenNumber of evenNumbers " [number]="evenNumber"></app-even>
+    </div>
+   
+</div>
+
